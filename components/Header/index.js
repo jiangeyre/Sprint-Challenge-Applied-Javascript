@@ -11,7 +11,7 @@
 
 function Header(){
     const
-        header = documennt.createElement('div'),
+        header = document.createElement('div'),
         date = document.createElement('span'),
         h1 = document.createElement('h1'),
         temp = document.createElement('span');
