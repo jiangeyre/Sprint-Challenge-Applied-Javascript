@@ -23,6 +23,7 @@ axios.get("https://lambda-times-backend.herokuapp.com/topics").then(response => 
         }
         tabTopics.append(createTab(xxx));
     })
+    console.log(response);
 })
 .catch(error => {
     console.log(error);

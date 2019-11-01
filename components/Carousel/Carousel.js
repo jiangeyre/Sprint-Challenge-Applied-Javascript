@@ -17,3 +17,61 @@
     <div class="right-button"> > </div>
   </div>
 */
+
+const carouselCont = document.querySelector('.carousel-container');
+
+carouselCont.append(createCarousel());
+
+function createCarousel(){
+  const
+    carousel = document.createElement('div'),
+    leftButt = document.createElement('div'),
+    mountImg = document.createElement('img'),
+    compImg = document.createElement('img'),
+    treeImg = document.createElement('img'),
+    turntableImg = document.createElement('img'),
+    rightButt = document.createElement('div');
+
+  const imgArray = [mountImg, compImg, treeImg, turntableImg];
+  let currentIndex = 0;  
+
+  carousel.appendChild(leftButt);
+  carousel.appendChild(mountImg);
+  carousel.appendChild(compImg);
+  carousel.appendChild(treeImg);
+  carousel.appendChild(turntableImg);
+  carousel.appendChild(rightButt);
+
+  carousel.classList.add('carousel');
+  leftButt.classList.add('left-button');
+  rightButt.classList.add('right-button');
+
+  mountImg.src = './assets/carousel/mountains.jpeg';
+  treeImg.src = './assets/carousel/trees.jpeg';
+  turntableImg.src = './assets/carousel/turntable.jpeg';
+  compImg.src = './assets/carousel/computer.jpeg';
+
+  mountImg.style.display = "inline";
+
+  leftButt.addEventListener('click', () => {
+    if(currentIndex === 0){
+      currentIndex = imgArray.length;
+    }
+    currentIndex--;
+
+    setTimeout(function(){
+    }, 250);
+  })
+
+  rightButt.addEventListener('click', () => {
+    currentIndex +=1;
+    if(currentIndex === imgArray.length){
+      currentIndex = 0;
+    }
+    setTimeout(function(){
+
+    }, 250);
+  })
+
+  return carousel;
+}

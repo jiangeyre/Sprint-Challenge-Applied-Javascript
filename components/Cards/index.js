@@ -27,6 +27,7 @@ axios.get("https://lambda-times-backend.herokuapp.com/articles")
                 cardCont.append(createCard(articles))
             })
         })
+        console.log(response);
     })
 .catch(error => {
     console.log(error);
