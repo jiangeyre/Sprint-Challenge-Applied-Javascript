@@ -64,7 +64,7 @@ function createCarousel(){
 
   rightButt.addEventListener('click', () => {
     imgArray[currentIndex].style.display = "none";
-    currentIndex +=1;
+    currentIndex ++;
     if(currentIndex === imgArray.length){
       currentIndex = 0;
     }

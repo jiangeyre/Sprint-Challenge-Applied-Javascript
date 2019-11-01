@@ -33,4 +33,4 @@ function createHeader(){
 
 const headerCont = document.querySelector('.header-container');
 
-headerCont.append(createHeader());
+headerCont.appendChild(createHeader());
