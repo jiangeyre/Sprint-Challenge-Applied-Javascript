@@ -54,23 +54,21 @@ function createCarousel(){
   mountImg.style.display = "inline";
 
   leftButt.addEventListener('click', () => {
+    imgArray[currentIndex].style.display = "none";
     if(currentIndex === 0){
       currentIndex = imgArray.length;
     }
     currentIndex--;
-
-    setTimeout(function(){
-    }, 250);
+    imgArray[currentIndex].style.display = "inline";
   })
 
   rightButt.addEventListener('click', () => {
+    imgArray[currentIndex].style.display = "none";
     currentIndex +=1;
     if(currentIndex === imgArray.length){
       currentIndex = 0;
     }
-    setTimeout(function(){
-
-    }, 250);
+  imgArray[currentIndex].style.display = "inline";
   })
 
   return carousel;
