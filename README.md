@@ -29,14 +29,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the DOM?
+The Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure and style of a document (HTML).
 
 2. What is an event?
+HTML events are things that happen to the HTML elements. When JS is used in the HTML page, JS can react on these events. An HTML event can be something the browser does or soemthing a user does.
 
 3. What is an event listener?
+An event listener is a procedure in JS that waits for an event to occur. Each avail event has an event handler, which is a block of code (usually a user-defined JS fucntion) that will be run when the event fires. The listener listens out for the event happening, and the handler is the code that is run in response of it happening.
 
 4. Why would we convert a NodeList into an Array?
+You cannot use array methods (.forEach, .filter, .map, etc.) with any of the elements you get back when using querySelectorAll() because it returns a NodeList, not an array.
 
 5. What is a component?
+A component is a small, potentially reusable set of logic, behaviors and interface elements. 
 
 ### Git Set up
 
